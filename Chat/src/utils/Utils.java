@@ -27,7 +27,7 @@ public class Utils {
 	private JTextArea chat;
 	
 	public void createLoginFrame(Client client) {
-		JFrame frame = new JFrame("Zamichat");
+		JFrame frame = new JFrame("Chatbox");
 		JPanel start = new JPanel(), south = new JPanel();
 		JTextField username = new JTextField("Votre Pseudo"), ip = new JTextField("IP du Serveur"), port = new JTextField("Port du Serveur");
 		JButton login = new JButton("Connecter");
@@ -64,7 +64,7 @@ public class Utils {
 	}
 	
 	public void createLoginFrame(Server server) {
-		JFrame frame = new JFrame("Zamichat");
+		JFrame frame = new JFrame("Chatbox");
 		JPanel start = new JPanel(), south = new JPanel();
 		JTextField username = new JTextField("Votre Pseudo"), port = new JTextField("Port du Serveur");
 		JButton login = new JButton("Connecter");
@@ -99,7 +99,7 @@ public class Utils {
 	}
 	
 	public void createFrame(Client client) {
-		frame = new JFrame("Zamichat - " + client.username);
+		frame = new JFrame("Chatbox - " + client.username);
 		chat = new JTextArea();
 		JTextField message = new JTextField();
 		
@@ -129,7 +129,7 @@ public class Utils {
 	}
 	
 	public void createFrame(Server server) {
-		frame = new JFrame("Zamichat - " + server.username);
+		frame = new JFrame("Chatbox - " + server.username);
 		chat = new JTextArea();
 		JTextField message = new JTextField();
 		
